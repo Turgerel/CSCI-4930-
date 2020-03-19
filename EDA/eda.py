@@ -11,10 +11,5 @@ class EDA:
         self.dataset_2017 = pd.read_csv(dataset_2017_filename, delimiter=',')
         self.dataset_2018 = pd.read_csv(dataset_2018_filename, delimiter=',')
 
-    def generateTargetVars(self, full_dataset):
-        target_variables = pd.Series()
-
-
-
-        return target_variables
+    from .eda_def import generateTargetVars
 
