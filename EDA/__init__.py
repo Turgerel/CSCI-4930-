@@ -1,6 +1,3 @@
-import numpy as np
-import pandas as pd
-
 class EDA:
     def __init__(self, dataset_2017_filename, dataset_2018_filename):
         self.dataset_2017_filename = dataset_2017_filename
@@ -12,4 +9,3 @@ class EDA:
         self.dataset_2018 = pd.read_csv(dataset_2018_filename, delimiter=',')
 
     from .eda_def import generateTargetVars
-
