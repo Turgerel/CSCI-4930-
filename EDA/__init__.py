@@ -9,3 +9,4 @@ class EDA:
         self.dataset_2018 = pd.read_csv(dataset_2018_filename, delimiter=',')
 
     from .eda_def import generateTargetVars
+    from .getCorrelation import getCorrelation
