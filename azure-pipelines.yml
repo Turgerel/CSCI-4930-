@@ -20,7 +20,6 @@ steps:
   displayName: 'Run a multi-line script'
 
 - script: |
-   curl ifconfig.me -v
-   
+    curl ifconfig.me -v
   displayName: 'Command Line Script'
 
