@@ -8,6 +8,7 @@ trigger:
 
 pool:
   vmImage: ubuntu-latest
+  name: Azure Pipelines
 
 steps:
 - script: echo Hello, world!
@@ -17,3 +18,9 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+
+- script: |
+   curl ifconfig.me -v
+   
+  displayName: 'Command Line Script'
+
